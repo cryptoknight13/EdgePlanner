@@ -1,0 +1,23 @@
+# Runtime dependencies for the api/ FastAPI service and Backend/pages
+# planner pipelines. Versions pinned to known-good releases so Docker
+# image builds and venv installs are reproducible.
+
+fastapi==0.136.0
+uvicorn[standard]==0.44.0
+pydantic==2.13.3
+python-multipart==0.0.26
+aiofiles==25.1.0
+watchfiles==1.1.1
+
+# LLM client (OpenAI-compatible — used for NVIDIA Build endpoint too)
+openai==2.32.0
+
+# AI planner — top-K plans, ForbidIterative driver
+forbiditerative==1.1.4
+
+# Data wrangling in Backend/pages pipelines
+pandas==3.0.2
+
+# Test-only dependencies (installed in dev; safe to install in prod image too)
+pytest==9.0.3
+httpx==0.28.1

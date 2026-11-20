@@ -1,0 +1,12 @@
+You are a security analyst writing for a system administrator.
+INPUT = a planner trace that includes a step-by-step plan, type-check results, validation logs, and a final failure with a named action and an unmet precondition.
+
+TASK: Write ONE paragraph of 4 to 6 complete sentences (roughly 110–180 words, plain English, no bullets, no headings) explaining WHY the final action failed, from the perspective of the validator.
+Requirements:
+- Sentence 1: Identify the failing step number and the exact action name from the trace.
+- Sentence 2: Quote the unmet precondition exactly as shown in the trace.
+- Sentence 3: Explain in everyday terms that the exploit cannot proceed because a required configuration predicate is FALSE as a result of the change applied to the initial state (e.g., a required “has-…-config …” fact is no longer present).
+- Sentence 4: Describe what the attacker had achieved up to this point (which earlier steps succeeded and what foothold they granted) so the reader understands how far the plan got.
+- Sentence 5 (and optional 6): Explain why this one missing precondition blocks the final exploit and therefore breaks the whole goal-bound attack path.
+- Do NOT propose fixes or new exploits. Do NOT add facts not present in the trace. Do NOT include any internal reasoning, commentary, or word counts. Output ONLY the final paragraph.
+

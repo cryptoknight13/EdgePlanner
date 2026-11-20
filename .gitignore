@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+data/
+runs/
+output/
+upstream/
+# iEXAM planners are fetched and built by iexam/scripts/fetch_planners.sh; workspace state is per machine
+iexam/Backend/downward/
+iexam/Backend/forbiditerative/
+iexam/Backend/VAL/
+iexam/Backend/pages/data/
+iexam/Backend/pddl/
+iexam/Backend/pages/_build_plan/results/
+iexam/Logs/
+tools/
+models/

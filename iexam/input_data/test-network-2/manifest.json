@@ -1,0 +1,11 @@
+{
+  "name": "test-network-2",
+  "label": "Test Network (Multi-CVEs for Nodes)",
+  "description": "A small example network with 14 nodes, 58 attack-connectivity edges, and 24 CVE annotations — useful for testing and demos.",
+  "files": {
+    "nodes": "node-data.json",
+    "edges": "connectivity-edge.json",
+    "cves": "cve-data.json",
+    "cve_in_node": "cve-in-node.json"
+  }
+}

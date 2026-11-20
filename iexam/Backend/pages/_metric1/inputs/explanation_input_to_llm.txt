@@ -1,0 +1,181 @@
+Type-checking connectivity-edge-between-web-server-a-and-mail-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-web-server-a-and-mail-server-b
+...action passes type checking.
+Type-checking connectivity-edge-between-dns-server-a-and-ftp-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-dns-server-b-and-database-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-dns-server-b-and-ftp-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-mail-server-a-and-database-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-mail-server-a-and-database-server-b
+...action passes type checking.
+Type-checking connectivity-edge-between-mail-server-a-and-database-server-c
+...action passes type checking.
+Type-checking connectivity-edge-between-mail-server-b-and-database-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-mail-server-b-and-database-server-b
+...action passes type checking.
+Type-checking connectivity-edge-between-mail-server-b-and-database-server-c
+...action passes type checking.
+Type-checking connectivity-edge-between-database-server-a-and-ftp-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-database-server-a-and-ftp-server-b
+...action passes type checking.
+Type-checking connectivity-edge-between-database-server-a-and-ftp-server-c
+...action passes type checking.
+Type-checking connectivity-edge-between-database-server-b-and-ftp-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-database-server-b-and-ftp-server-b
+...action passes type checking.
+Type-checking connectivity-edge-between-database-server-b-and-ftp-server-c
+...action passes type checking.
+Type-checking connectivity-edge-between-database-server-c-and-ftp-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-database-server-c-and-ftp-server-b
+...action passes type checking.
+Type-checking connectivity-edge-between-database-server-c-and-ftp-server-c
+...action passes type checking.
+Type-checking connectivity-edge-between-ftp-server-a-and-admin-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-ftp-server-a-and-admin-server-b
+...action passes type checking.
+Type-checking connectivity-edge-between-ftp-server-b-and-admin-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-ftp-server-b-and-admin-server-b
+...action passes type checking.
+Type-checking connectivity-edge-between-ftp-server-c-and-admin-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-ftp-server-c-and-admin-server-b
+...action passes type checking.
+Type-checking connectivity-edge-between-web-server-b-and-mail-server-a
+...action passes type checking.
+Type-checking connectivity-edge-between-web-server-b-and-mail-server-b
+...action passes type checking.
+Type-checking attacker-has-access-to-web-server-b
+...action passes type checking.
+Type-checking attacker-has-access-to-dns-server-b
+...action passes type checking.
+Type-checking attacker-has-access-to-web-server-a
+...action passes type checking.
+Type-checking attacker-has-access-to-dns-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2015-1635-to-compromise-web-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2020-5902-to-compromise-web-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2004-0840-to-compromise-dns-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2008-3060-to-compromise-dns-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2017-14491-to-compromise-mail-server-a-via-web-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2017-14491-to-compromise-mail-server-a-via-web-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2020-1350-to-compromise-mail-server-b-via-web-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2020-1350-to-compromise-mail-server-b-via-web-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2018-1058-to-compromise-database-server-a-via-dns-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2018-1058-to-compromise-database-server-a-via-mail-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2018-1058-to-compromise-database-server-a-via-mail-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2020-13295-to-compromise-database-server-b-via-mail-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2020-13295-to-compromise-database-server-b-via-mail-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2021-20329-to-compromise-database-server-c-via-mail-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2021-20329-to-compromise-database-server-c-via-mail-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2013-4465-to-compromise-ftp-server-a-via-dns-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2013-4465-to-compromise-ftp-server-a-via-dns-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2013-4465-to-compromise-ftp-server-a-via-database-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2013-4465-to-compromise-ftp-server-a-via-database-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2013-4465-to-compromise-ftp-server-a-via-database-server-c
+...action passes type checking.
+Type-checking attacker-exploit-cve-2018-8206-to-compromise-ftp-server-b-via-database-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2018-8206-to-compromise-ftp-server-b-via-database-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2018-8206-to-compromise-ftp-server-b-via-database-server-c
+...action passes type checking.
+Type-checking attacker-exploit-cve-2020-9365-to-compromise-ftp-server-c-via-database-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2020-9365-to-compromise-ftp-server-c-via-database-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2020-9365-to-compromise-ftp-server-c-via-database-server-c
+...action passes type checking.
+Type-checking attacker-exploit-cve-2009-0241-to-compromise-admin-server-a-via-ftp-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2009-0241-to-compromise-admin-server-a-via-ftp-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2009-0241-to-compromise-admin-server-a-via-ftp-server-c
+...action passes type checking.
+Type-checking attacker-exploit-cve-2019-0211-to-compromise-admin-server-b-via-ftp-server-a
+...action passes type checking.
+Type-checking attacker-exploit-cve-2019-0211-to-compromise-admin-server-b-via-ftp-server-b
+...action passes type checking.
+Type-checking attacker-exploit-cve-2019-0211-to-compromise-admin-server-b-via-ftp-server-c
+...action passes type checking.
+Checking plan: /Users/rakeshpodder/Documents/GitHub/iEXAM-Toolset/Backend/pages/_metric1/metric1_output/plans/plan_solProblem_1.txt
+Plan to validate:
+
+Plan size: 4
+1:
+(attacker-has-access-to-dns-server-a dns-server-a attacker1)
+
+2:
+(attacker-exploit-cve-2004-0840-to-compromise-dns-server-a dns-server-a attacker1 windows-xp-64-bit-edition-or-windows-server-2003-or-windows-server-2003-64-bit-edition-or-exchange-server-2003-or-exchange-routing-engine-component smtp-component exchange-routing-engine-component malicious-dns-response-message-with-improper-length-values)
+
+3:
+(attacker-exploit-cve-2013-4465-to-compromise-ftp-server-a-via-dns-server-a ftp-server-a dns-server-a simple-machines-forum-before-2-dot-0-dot-6-or-2-dot-1 avatar-upload-functionality uploading-file-with-executable-extension direct-request file-in-an-unspecified-directory)
+
+4:
+(attacker-exploit-cve-2019-0211-to-compromise-admin-server-b-via-ftp-server-a admin-server-b ftp-server-a apache-http-server-2-dot-4-dot-17-to-2-dot-4-dot-38 mpm-event-worker-or-prefork less-privileged-child-processes-or-threads manipulating-the-scoreboard)
+
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Adding (has-access-to-dns-server-a-node dns-server-a attacker1)
+
+Checking next happening (time 2)
+Adding (exploited-n3 dns-server-a)
+
+Checking next happening (time 3)
+Adding (exploited-n10 ftp-server-a)
+
+Checking next happening (time 4)
+Plan failed because of unsatisfied precondition in:
+(attacker-exploit-cve-2019-0211-to-compromise-admin-server-b-via-ftp-server-a admin-server-b ftp-server-a apache-http-server-2-dot-4-dot-17-to-2-dot-4-dot-38 mpm-event-worker-or-prefork less-privileged-child-processes-or-threads manipulating-the-scoreboard)
+
+Plan failed to execute
+
+Plan Repair Advice:
+
+(attacker-exploit-cve-2019-0211-to-compromise-admin-server-b-via-ftp-server-a admin-server-b ftp-server-a apache-http-server-2-dot-4-dot-17-to-2-dot-4-dot-38 mpm-event-worker-or-prefork less-privileged-child-processes-or-threads manipulating-the-scoreboard) has an unsatisfied precondition at time 4
+(Set (has-n14-system-1-dot-1 apache-http-server-2-dot-4-dot-17-to-2-dot-4-dot-38) to true)
+
+
+Failed plans:
+/Users/rakeshpodder/Documents/GitHub/iEXAM-Toolset/Backend/pages/_metric1/metric1_output/plans/plan_solProblem_1.txt
+You are a security analyst writing for a system administrator.
+INPUT = a planner trace that includes a step-by-step plan, type-check results, validation logs, and a final failure with a named action and an unmet precondition.
+
+TASK: Write ONE concise paragraph (90–140 words, plain English, no bullets) explaining WHY the final action failed, from the perspective of the validator. 
+Requirements:
+- Mention the failing step number and the exact action name.
+- Quote the unmet precondition exactly as shown in the trace.
+- Explain, in everyday terms, that the exploit cannot proceed because a required configuration predicate is FALSE due to a change (e.g., “has-adminserver-system-1-config ganglia-3.1.1” not satisfied).
+- Briefly the action, but this prerequisite blocks the final exploit.
+- Do NOT propose fixes or new exploits. Do NOT add facts not present in the trace. No lists, no headings—just one paragraph.

@@ -1,0 +1,44 @@
+{
+  "n0":  {"name": "Attacker", "IP": "203.0.113.10", "location": "external", "internet": "yes", "label": "0"},
+
+  "n1":  {"name": "Web Server A", "IP": "198.51.100.10", "port": "p-80",   "protocol": "http",  "location": "external", "internet": "yes", "label": "1"},
+  "n2":  {"name": "Web Server B", "IP": "198.51.100.11", "port": "p-443",  "protocol": "https", "location": "external", "internet": "yes", "label": "1"},
+  "n3":  {"name": "Web Server C", "IP": "198.51.100.12", "port": "p-443",  "protocol": "https", "location": "external", "internet": "yes", "label": "1"},
+
+  "n4":  {"name": "DNS Server A", "IP": "198.51.100.20", "port": "p-53",   "protocol": "dns",   "location": "external", "internet": "yes", "label": "1"},
+  "n5":  {"name": "DNS Server B", "IP": "198.51.100.21", "port": "p-53",   "protocol": "dns",   "location": "external", "internet": "yes", "label": "1"},
+
+  "n6":  {"name": "Mail Server A", "IP": "198.51.100.30", "port": "p-25",  "protocol": "smtp",  "location": "external", "internet": "yes", "label": "2"},
+  "n7":  {"name": "Mail Server B", "IP": "198.51.100.31", "port": "p-25",  "protocol": "smtp",  "location": "external", "internet": "yes", "label": "2"},
+
+  "n8":  {"name": "VPN Gateway A", "IP": "198.51.100.40", "port": "p-443", "protocol": "ssl",   "location": "external", "internet": "yes", "label": "2"},
+
+  "n9":  {"name": "App Server A", "IP": "10.0.10.10", "port": "p-8080",    "protocol": "http",  "location": "internal", "internet": "no",  "label": "3"},
+  "n10": {"name": "App Server B", "IP": "10.0.10.11", "port": "p-8443",    "protocol": "https", "location": "internal", "internet": "no",  "label": "3"},
+  "n11": {"name": "App Server C", "IP": "10.0.10.12", "port": "p-8080",    "protocol": "http",  "location": "internal", "internet": "no",  "label": "3"},
+
+  "n12": {"name": "FTP Server A", "IP": "10.0.20.10", "port": "p-20",      "protocol": "tcp",   "location": "internal", "internet": "no",  "label": "3"},
+  "n13": {"name": "FTP Server B", "IP": "10.0.20.11", "port": "p-20",      "protocol": "tcp",   "location": "internal", "internet": "no",  "label": "3"},
+
+  "n14": {"name": "Proxy Server A", "IP": "10.0.30.10", "port": "p-3128",  "protocol": "http",  "location": "internal", "internet": "no",  "label": "3"},
+
+  "n15": {"name": "Database Server A", "IP": "10.0.40.10", "port": "p-5432", "protocol": "sql", "location": "internal", "internet": "no",  "label": "4"},
+  "n16": {"name": "Database Server B", "IP": "10.0.40.11", "port": "p-27017","protocol": "sql", "location": "internal", "internet": "no",  "label": "4"},
+  "n17": {"name": "Database Server C", "IP": "10.0.40.12", "port": "p-1433", "protocol": "sql", "location": "internal", "internet": "no",  "label": "4"},
+
+  "n18": {"name": "Admin Server A", "IP": "10.0.50.10", "port": "p-1311",  "protocol": "https", "location": "internal", "internet": "no",  "label": "5"},
+  "n19": {"name": "Admin Server B", "IP": "10.0.50.11", "port": "p-1311",  "protocol": "https", "location": "internal", "internet": "no",  "label": "5"},
+
+  "n20": {"name": "Active Directory A", "IP": "10.0.60.10", "port": "p-389", "protocol": "ldap","location": "internal", "internet": "no",  "label": "5"},
+
+  "n21": {"name": "File Server A",         "IP": "10.0.70.10", "port": "p-445",  "protocol": "smb",  "location": "internal", "internet": "no", "label": "3"},
+  "n22": {"name": "File Server B",         "IP": "10.0.70.11", "port": "p-21",   "protocol": "ftp",  "location": "internal", "internet": "no", "label": "3"},
+  "n23": {"name": "Backup Server",         "IP": "10.0.80.10", "port": "p-10000","protocol": "tcp",  "location": "internal", "internet": "no", "label": "4"},
+  "n24": {"name": "Monitoring Server",     "IP": "10.0.90.10", "port": "p-8649", "protocol": "tcp",  "location": "internal", "internet": "no", "label": "3"},
+  "n25": {"name": "Jump Host",             "IP": "10.0.30.20", "port": "p-22",   "protocol": "ssh",  "location": "internal", "internet": "no", "label": "3"},
+  "n26": {"name": "Bastion Host",          "IP": "10.0.30.21", "port": "p-22",   "protocol": "ssh",  "location": "internal", "internet": "no", "label": "3"},
+  "n27": {"name": "Active Directory B",    "IP": "10.0.60.11", "port": "p-389",  "protocol": "ldap", "location": "internal", "internet": "no", "label": "5"},
+  "n28": {"name": "Container Registry",    "IP": "10.0.10.20", "port": "p-5000", "protocol": "https","location": "internal", "internet": "no", "label": "3"},
+  "n29": {"name": "SCM Server",            "IP": "10.0.10.21", "port": "p-22",   "protocol": "ssh",  "location": "internal", "internet": "no", "label": "3"},
+  "n30": {"name": "CI CD Server",          "IP": "10.0.10.22", "port": "p-8080", "protocol": "http", "location": "internal", "internet": "no", "label": "3"}
+}

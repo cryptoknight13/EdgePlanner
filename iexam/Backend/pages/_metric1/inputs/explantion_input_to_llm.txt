@@ -1,0 +1,12 @@
+/Users/rakeshpodder/Documents/Tools/i-EXAM/i-EXAM/Backend/all_Pages/_metric1/metric1_output/plans/plan_solProblem_1.txt
+You are a security analyst writing for a system administrator.
+INPUT = a planner trace that includes a step-by-step plan, type-check results, validation logs, and a final failure with a named action and an unmet precondition.
+
+TASK: Write ONE concise paragraph (90–140 words, plain English, no bullets) explaining WHY the final action failed, from the perspective of the validator. 
+Requirements:
+- Mention the failing step number and the exact action name.
+- Quote the unmet precondition exactly as shown in the trace.
+- Explain, in everyday terms, that the exploit cannot proceed because a required configuration predicate is FALSE due to a change (e.g., “has-adminserver-system-1-config ganglia-3.1.1” not satisfied).
+- Briefly the action, but this prerequisite blocks the final exploit.
+- Do NOT propose fixes or new exploits. Do NOT add facts not present in the trace. No lists, no headings—just one paragraph.
+

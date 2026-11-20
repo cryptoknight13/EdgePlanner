@@ -1,0 +1,6 @@
+(attacker-has-access-to-mail-server mail-server attacker1)
+(attacker-exploit-cve-2004-0840-to-compromise-mail-server mail-server attacker1 windows-xp-64-bit-edition-or-windows-server-2003-or-windows-server-2003-64-bit-edition-or-exchange-server-2003-or-exchange-routing-engine-component smtp-component exchange-routing-engine-component malicious-dns-response-message-with-improper-length-values)
+(attacker-has-access-to-web-server web-server attacker1)
+(attacker-exploit-cve-2020-9365-to-compromise-ftp-server-via-mail-server ftp-server mail-server pure-ftpd-1-dot-0-dot-49 utils-dot-c out-of-bounds-read-in-pure_strcmp pure_strcmp-function)
+(attacker-exploit-cve-2009-0241-to-compromise-admin-server-via-ftp-server admin-server ftp-server ganglia-3-dot-1-dot-1 gmetad-slash-server-dot-c long-pathname-request-to-gmetad-service process_path-function)
+; cost = 5 (unit cost)

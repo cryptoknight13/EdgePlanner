@@ -1,0 +1,19 @@
+# run.py executes only components marked true, in this order: passive, active, resolver, cve.
+components:
+  passive: true
+  active: true
+  resolver: true
+  cve: true
+  planner: false
+
+passive:
+  window_seconds: 60
+
+active:
+  # Target IP is appended by the collector; never put hosts or ranges here.
+  nmap_args: ["-sV", "-Pn", "--script", "ssl-cert"]
+
+link:
+  # IEEE MA-L registry, downloaded once if missing.
+  oui_file: data/oui.csv
+  oui_url: https://standards-oui.ieee.org/oui/oui.csv

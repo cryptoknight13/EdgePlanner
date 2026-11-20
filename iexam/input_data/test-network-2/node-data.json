@@ -1,0 +1,17 @@
+{
+  "n0": {"name": "Attacker", "IP": "192.168.1.23", "location": "external", "internet": "yes", "label": "0"},
+  "n1": {"name": "Web Server A", "IP": "192.168.1.52", "port": "p-80","protocol": "http","location": "external", "internet": "yes", "label": "1"},
+  "n2": {"name": "Web Server B", "IP": "192.168.1.53", "port": "p-80","protocol": "http","location": "external", "internet": "yes", "label": "1"},
+  "n5": {"name": "Mail Server A", "IP": "192.168.2.52", "port": "p-25","protocol": "smtp","location": "external", "internet": "yes","label": "2"},
+  "n6": {"name": "Mail Server B", "IP": "192.168.2.53", "port": "p-25","protocol": "smtp","location": "external", "internet": "yes","label": "2"},
+  "n3": {"name": "DNS Server A", "IP": "192.168.1.54", "port": "p-53","protocol": "dns", "location": "external", "internet": "yes", "label": "1"},
+  "n4": {"name": "DNS Server B", "IP": "192.168.1.55", "port": "p-53","protocol": "dns", "location": "external", "internet": "yes", "label": "1"},
+  "n7": {"name": "Database Server A", "IP": "192.168.3.52", "port": "p-1433", "protocol": "sql", "location": "internal", "internet": "no", "label": "3"},
+  "n8": {"name": "Database Server B", "IP": "192.168.3.53", "port": "p-1433", "protocol": "sql", "location": "internal", "internet": "no", "label": "3"},
+  "n9": {"name": "Database Server C", "IP": "192.168.3.54", "port": "p-1433", "protocol": "sql", "location": "internal", "internet": "no", "label": "3"},
+  "n10": {"name": "FTP Server A", "IP": "192.168.3.55", "port": "p-20","protocol": "tcp", "location": "internal", "internet": "no", "label": "4"},
+  "n11": {"name": "FTP Server B", "IP": "192.168.3.56", "port": "p-20","protocol": "tcp", "location": "internal", "internet": "no", "label": "4"},
+  "n12": {"name": "FTP Server C", "IP": "192.168.3.57", "port": "p-20","protocol": "tcp", "location": "internal", "internet": "no", "label": "4"},
+  "n13": {"name": "Admin Server A", "IP": "192.168.3.58","port": "p-1311","protocol": "https", "location": "internal", "internet": "no", "label": "5"},
+  "n14": {"name": "Admin Server B", "IP": "192.168.3.59","port": "p-1311","protocol": "https", "location": "internal", "internet": "no", "label": "5"}
+}

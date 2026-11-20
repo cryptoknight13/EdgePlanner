@@ -1,0 +1,13 @@
+# All pure Python or with aarch64 wheels (verified on Kali arm64, Python 3.13).
+PyYAML==6.0.3
+requests==2.34.2
+scapy==2.8.0
+# iEXAM runtime subset (phase 7+), same pins as iexam/requirements.txt
+fastapi==0.136.0
+pydantic==2.13.3
+openai==2.32.0
+forbiditerative==1.1.4
+pandas==3.0.2
+# build-only: CMake for the planners when the system has none (iexam/scripts/fetch_planners.sh)
+cmake==4.4.4
+# Exact transitive pins: requirements.lock

@@ -1,0 +1,16 @@
+You are given a Python set of PDDL-like initial state atoms describing host/software conditions. Convert them into one concise, single paragraph in natural English that starts with:
+“Update ...". 
+Rules:
+
+Parse tokens by splitting on -, _, and spaces. Ignore boilerplate prefixes like has, has-initial-state, has-webserver, system, config, numeric IDs (e.g., 1, 2), and connector words.
+Normalize OS/product names and versions (e.g., windows-7-sp1, windows-8-1, windows-server-2012-r2) to readable forms, merging related variants into compact ranges/groups (e.g., “Windows 7 SP1/8/8.1/Server 2008 R2/2012/2012 R2”).
+Normalize driver, functions, system, vertions names like tmui-configuration-utility → “TMUI Configuration Utility”.
+De-duplicate and group by category (e.g., OS/platforms together, then applications/tools).
+Output must be a single short sentence/paragraph.
+Each options are sperated by {}. Do not add from other options.
+
+An example for better understanding.
+Input example:: {'has-initial-state-has-webserver-system-1-config windows-7-spi-or-windows-server-2008-r2-spi-or-windows-8-or-windows-8-1-or-windows-server-2012-gold-or-windows-server-2012-r2', 'has-initial-state-has-web-driver-2 tmui-configuration-utility'}
+Output style: Make a change Windows 7 SP1/8/8.1/Server 2008 R2/2012/2012 R2 and update TMUI Configuration Utility'.
+
+Strictly follow the output style. Do not include code, bullets, or extra commentary—just the paragraph.

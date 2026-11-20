@@ -1,0 +1,9 @@
+{
+  "n0": {"name": "Attacker", "IP": "192.168.1.23", "location": "external", "internet": "yes", "label": "0"},
+  "n1": {"name": "Web Server", "IP": "192.168.1.52", "port": "p-80", "protocol": "http", "location": "external", "internet": "yes", "label": "1"},
+  "n2": {"name": "Mail Server", "IP": "192.168.2.52", "port": "p-25", "protocol": "smtp", "location": "external", "internet": "yes", "label": "2"},
+  "n3": {"name": "DNS Server", "IP": "192.168.1.54", "port": "p-53", "protocol": "dns", "location": "external", "internet": "yes", "label": "1"},
+  "n4": {"name": "FTP Server", "IP": "192.168.3.55", "port": "p-20", "protocol": "tcp", "location": "internal", "internet": "no", "label": "4"},
+  "n5": {"name": "Database Server", "IP": "192.168.3.52", "port": "p-1433", "protocol": "sql", "location": "internal", "internet": "no", "label": "3"},
+  "n6": {"name": "Admin Server", "IP": "192.168.3.58", "port": "p-1311", "protocol": "https", "location": "internal", "internet": "no", "label": "5"}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "test-network-3",
+  "label": "Test Network 3 (large enterprise)",
+  "description": "Large enterprise topology: 30 servers + attacker spanning DMZ (web/dns/mail/vpn), internal app/ftp/proxy tier, file/backup/monitoring tier, jump and bastion hosts, database cluster, admin servers, dual Active Directory, and a CI/CD pipeline (container registry, SCM, build server). 40 CVE instances — 10 nodes carry two CVEs and 20 nodes carry a single CVE.",
+  "files": {
+    "nodes": "node-data.json",
+    "edges": "connectivity-edge.json",
+    "cves": "cve-data.json",
+    "cve_in_node": "cve-in-node.json"
+  }
+}

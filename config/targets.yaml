@@ -1,0 +1,8 @@
+# LAN vantage and monitored hosts. Active collection touches only the hosts under `targets`.
+interface: eth0
+router: 192.168.1.1
+
+targets:
+  camera:
+    ip: 192.168.1.183
+    label: camera

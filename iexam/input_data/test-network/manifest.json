@@ -1,0 +1,11 @@
+{
+  "name": "test-network",
+  "label": "Test Network",
+  "description": "A small example network with 14 nodes, 36 edges, and 14 CVE annotations — useful for testing and demos.",
+  "files": {
+    "nodes": "node-data.json",
+    "edges": "connectivity-edge.json",
+    "cves": "cve-data.json",
+    "cve_in_node": "cve-in-node.json"
+  }
+}

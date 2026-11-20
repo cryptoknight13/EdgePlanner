@@ -1,0 +1,11 @@
+{
+  "name": "test-network-simple",
+  "label": "Simple Test Network",
+  "description": "A 7-node network with two attack paths to the Admin Server: Attacker -> Web -> DNS -> Database -> Admin, and Attacker -> Mail -> FTP -> Admin. Useful for quick demos.",
+  "files": {
+    "nodes": "node-data.json",
+    "edges": "connectivity-edge.json",
+    "cves": "cve-data.json",
+    "cve_in_node": "cve-in-node.json"
+  }
+}

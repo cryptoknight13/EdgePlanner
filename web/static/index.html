@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EdgePlanner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/static/style.css">
+<script>
+  // Theme before first paint: saved choice, else dark (iEXAM's default).
+  try { if (localStorage.getItem("edgeplanner.theme") === "light") document.documentElement.classList.add("light"); } catch (e) {}
+</script>
+</head>
+<body>
+<header class="top">
+  <span class="brand">Edge<b>Planner</b></span>
+  <span class="badge">Home network</span>
+  <div class="actions-right">
+    <button type="button" id="logs-open" class="ghost" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+      <span>Logs</span>
+      <span id="logs-status" class="logs-status" hidden></span>
+    </button>
+    <button type="button" id="theme-toggle" class="ghost" aria-label="Switch theme"></button>
+    <button type="button" id="new-scan" class="primary">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      Discover Your Devices
+    </button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" aria-label="Sections">
+    <div class="side-head">
+      <p class="eyebrow">Mode</p>
+      <p class="side-title">Attack-Connectivity Graph</p>
+    </div>
+    <nav id="side-nav" class="side-nav"></nav>
+    <div id="side-foot" class="side-foot"></div>
+  </aside>
+
+  <main id="main" class="main">
+    <div id="view-start" class="view page"></div>
+    <div id="view-keys" class="view page" hidden></div>
+
+    <div id="view-network" class="view" hidden>
+      <nav class="pipeline" aria-label="Pipeline stages in this scan. Select a stage to run it and every later stage.">
+        <ol id="stages"></ol>
+      </nav>
+      <div id="next-step" class="next-step" role="status" aria-live="polite"></div>
+
+      <section class="summary" aria-live="polite">
+        <div class="lede">
+          <h1 id="headline"></h1>
+          <p id="subline"></p>
+        </div>
+        <dl id="stats" class="stats"></dl>
+      </section>
+
+      <div class="workspace">
+        <section class="map" aria-label="Network map, attacker on the left">
+          <div id="graph"></div>
+          <div class="map-legend" aria-hidden="true">
+            <span><i class="dot ring"></i>No known CVEs</span>
+            <span><i class="dot ring vuln"></i>Has CVEs</span>
+            <span><i class="dot ring exploited"></i>Exploited in the wild</span>
+            <span><i class="dot ring self"></i>This machine</span>
+            <span class="legend-note">Names and device types appear after Gather.</span>
+          </div>
+        </section>
+        <aside id="panel" class="panel" aria-label="Details"></aside>
+      </div>
+    </div>
+
+    <div id="view-iexam" class="view page" hidden></div>
+  </main>
+</div>
+
+<div id="logs-backdrop" class="drawer-backdrop" hidden></div>
+<aside id="logs" class="drawer" role="dialog" aria-modal="true" aria-labelledby="logs-title" hidden>
+  <header>
+    <div><h2 id="logs-title">Pipeline log</h2><p id="logs-sub" class="sub"></p></div>
+    <button type="button" id="logs-close" class="ghost" aria-label="Close logs">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </header>
+  <pre id="logs-body"></pre>
+</aside>
+
+<dialog id="consent" class="modal" aria-labelledby="consent-title">
+  <form method="dialog">
+    <h2 id="consent-title">May EdgePlanner scan this network?</h2>
+    <p>It will look at every device on <strong id="consent-net"></strong>. It only detects: it never logs in to a
+      device or attacks it. Scanning a network you do not own or manage can be against the law.</p>
+    <label class="check"><input type="checkbox" id="consent-box"> <span>I own this network, or its owner has allowed me to scan it.</span></label>
+    <p id="consent-error" class="setup-msg bad" role="alert"></p>
+    <div class="modal-actions">
+      <button type="submit" value="cancel" class="ghost">Cancel</button>
+      <button type="submit" value="ok" id="consent-ok" class="primary" disabled>Scan</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="/static/vendor/cytoscape.min.js"></script>
+<script src="/static/iexam.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

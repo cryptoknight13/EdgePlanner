@@ -1,0 +1,5 @@
+changes >> {'has-initial-state-web-software microsoft-windows-8'}
+changes -> {'has-initial-state-admin-driver-1 gmetad-slash-server-dot-c', 'has-initial-state-admin-driver-2 mpm-event-worker-or-prefork'}
+changes -> {'has-initial-state-adminserver-system-1-config ganglia-3-dot-1-dot-1', 'has-initial-state-admin-driver-2 mpm-event-worker-or-prefork'}
+changes -> {'has-initial-state-vul-admin-function-1 process_path-function', 'has-initial-state-admin-driver-2 mpm-event-worker-or-prefork'}
+changes -> {'has-initial-state-adminserver-system-2-config apache-http-server-2-dot-4-dot-17-to-2-dot-4-dot-38', 'has-initial-state-admin-driver-1 gmetad-slash-server-dot-c'}
