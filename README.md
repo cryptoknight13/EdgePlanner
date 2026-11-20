@@ -7,6 +7,7 @@
   <img alt="Runs on aarch64" src="https://img.shields.io/badge/runs%20on-aarch64%20%7C%20Raspberry%20Pi%203-C51A4A?logo=raspberrypi&logoColor=white">
   <img alt="Agentless" src="https://img.shields.io/badge/agentless-no%20logins%2C%20no%20exploits-14b8a6">
   <img alt="Planner" src="https://img.shields.io/badge/planner-Fast%20Downward%20%2B%20ForbidIterative-7c3aed">
+  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-22c55e">
 </p>
 
 <p align="center">
@@ -32,6 +33,7 @@
 - [Tests](#tests)
 - [Project layout](#project-layout)
 - [Credits](#credits)
+- [License](#license)
 
 ## What it does
 
@@ -267,3 +269,7 @@ Phase-by-phase design notes and gates are in [`phases/README.md`](phases/README.
 - **[nmap](https://nmap.org)**, **[nuclei](https://github.com/projectdiscovery/nuclei)**, **[NVD](https://nvd.nist.gov)**: discovery, detection and vulnerability data.
 - **[llama.cpp](https://github.com/ggml-org/llama.cpp)**: local LLM inference.
 - **[Cytoscape.js](https://js.cytoscape.org)**: the network graph on the page.
+
+## License
+
+[MIT](LICENSE), except the pyperplan grounder under `iexam/Backend/pages/_metric1/`, which stays under GPLv3. See [`LICENSE`](LICENSE) for details.
